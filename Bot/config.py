@@ -1,15 +1,13 @@
 # region imports <- This is foldable
 import discord
-from discord.ext import commands
-from discord.ext.commands import has_permissions
-from discord import app_commands
-from client import *
+from client import bot
 from dotenv import load_dotenv
+import requests
 import os
-import admin_commands
+from admin_commands import *
 import user_commands
-
 # endregion
+
 
 
 load_dotenv()

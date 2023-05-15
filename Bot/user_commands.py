@@ -1,7 +1,6 @@
 # region imports <- This is foldable 
 import discord
-import client
-from config import *
+from client import bot
 from discord.ext import commands
 from discord.ext.commands import check
 import requests
@@ -17,3 +16,4 @@ async def ping(interaction: discord.Interaction):
 async def enroll(interaction: discord.Interaction):
     link = "https://forms.gle/vBm5VpfPaExjrAm56"
     await interaction.response.send_message(f"Enroll by clicking the link below:\n{link}")
+    
