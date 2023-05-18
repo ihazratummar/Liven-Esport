@@ -6,12 +6,13 @@ import requests
 import os
 from admin_commands import *
 import user_commands
-# endregion
 
+# endregion
 
 
 load_dotenv()
 token = os.getenv("token")
+
 
 @bot.event
 async def on_ready():
@@ -21,5 +22,6 @@ async def on_ready():
         print(f"Synced {len(synced)} commands(s)")
     except Exception as e:
         print(e)
+
 
 bot.run(token)
