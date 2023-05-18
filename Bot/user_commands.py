@@ -20,3 +20,11 @@ async def enroll(interaction: discord.Interaction):
     await interaction.response.send_message(
         f"Enroll by clicking the link below:\n{link}"
     )
+
+
+@bot.tree.command(name="instagram", description="instagram")
+async def instagram(interaction: discord.Interaction):
+    link = "https://www.instagram.com/livenesports/"
+    await interaction.response.send_message(
+        f"Check Out our official instagram account: {link}."
+    )
